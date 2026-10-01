@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#EEEAE0" />
+    <meta name="description" content="NeuroNotes — a calmer way to capture and organize thoughts." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <title>NeuroNotes</title>
+
+    <style>
+      :root {
+        --bg: #eeeae0;
+        --surface: #ffffff;
+        --surface-soft: #f7f2ea;
+        --text: #1c1c1a;
+        --text-sub: #6b6b60;
+        --text-muted: #9e9d94;
+        --sage: #6b8f71;
+        --sage-soft: #d6e4d8;
+        --sage-faint: #edf2eb;
+        --cream: #f7f4f0;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; }
+      html, body, #root {
+        height: 100%;
+        min-height: 100dvh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: var(--bg);
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        overscroll-behavior: none;
+        /* Safe area for notched phones */
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+      }
+      button, input, textarea { font: inherit; }
+      button { cursor: pointer; }
+      img, svg { display: block; max-width: 100%; }
+      ::-webkit-scrollbar { display: none; }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@revenuecat/purchases-js": "^1.67.0"
+  }
+}

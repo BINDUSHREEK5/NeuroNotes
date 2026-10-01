@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">NeuroNotes</string>
+    <string name="title_activity_main">NeuroNotes</string>
+    <string name="package_name">com.neuronotes.app</string>
+    <string name="custom_url_scheme">com.neuronotes.app</string>
+</resources>

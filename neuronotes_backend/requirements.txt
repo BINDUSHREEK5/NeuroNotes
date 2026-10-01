@@ -1,0 +1,35 @@
+# Core
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-dotenv==1.0.1
+
+# Database - Supabase PostgreSQL (scales to 500+ users)
+sqlalchemy==2.0.52
+psycopg2-binary==2.9.13
+alembic==1.13.1
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.9
+httpx==0.27.0
+
+# AI
+openai==3.13.0
+google-generativeai==0.8.3
+google-genai>=1.0.0,<2.0.0
+
+# Rate limiting
+slowapi==0.1.9
+redis==5.0.4
+# AI Emotional Chat — COMPLETELY FREE (replaces anthropic)
+groq==0.9.0
+
+# Files
+aiofiles==23.2.1
+
+# Security
+cryptography==42.0.5
+
+# Monitoring
+sentry-sdk[fastapi]==2.7.0

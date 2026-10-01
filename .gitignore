@@ -1,0 +1,74 @@
+# Environment files and local credentials
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies and Python environments
+node_modules/
+**/node_modules/
+.venv/
+**/.venv/
+venv/
+**/venv/
+.venv-*/
+**/.venv-*/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Build output, caches, and logs
+dist/
+**/dist/
+build/
+**/build/
+coverage/
+**/coverage/
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+**/.mypy_cache/
+.ruff_cache/
+**/.ruff_cache/
+.gradle/
+**/.gradle/
+*.tsbuildinfo
+*.log
+
+# Local databases and machine-specific configuration
+*.db
+*.sqlite
+*.sqlite3
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+google-services.json
+GoogleService-Info.plist
+.vscode/
+.idea/
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/Thumbs.db
+
+# Android-generated files
+local.properties
+**/local.properties
+neuronotes_frontend/vite.config.js
+neuronotes_frontend/vite.config.d.ts
+
+# Local context and one-off development scripts
+neuronotes_frontend/ctx*.txt
+neuronotes_frontend/found_context*.txt
+neuronotes_frontend/dev.json
+neuronotes_frontend/add_*.py
+neuronotes_frontend/add_*.cjs
+neuronotes_frontend/find_capture*.py
+neuronotes_frontend/fix_*.py
+neuronotes_frontend/get_ctx.py
+neuronotes_frontend/update_callsites.py

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'DM Serif Display', serif;
+  --font-sans: 'Manrope', sans-serif;
+
+  --color-bg: #F7F5F2;
+  --color-surface: #FFFFFF;
+  --color-muted: #F0EDE8;
+  --color-subtle: #E8E4DF;
+  --color-text-primary: #2C2C2C;
+  --color-text-secondary: #7A7570;
+  --color-text-muted: #B0A9A2;
+  --color-text-ghost: #D4CEC9;
+
+  --color-sage-deep: #4A7A5A;
+  --color-sage: #7B9E87;
+  --color-sage-mid: #A8C5B0;
+  --color-sage-light: #D4E4D9;
+  --color-sage-faint: #EDF5EF;
+
+  --color-amber-deep: #9B6A3A;
+  --color-amber: #457B9D;
+  --color-amber-light: #F0D5B8;
+  --color-amber-faint: #FBF0E4;
+
+  --color-lavender: #9B8EC4;
+  --color-lavender-light: #E8E4F0;
+  --color-peach-light: #FEF3C7;
+  --color-peach-text: #8B5E52;
+}
+
+html, body, #root {
+  height: 100%;
+  min-height: 100dvh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Manrope', sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+/* Prevent iOS bounce / overscroll */
+html {
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar { display: none; }
+* { scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+}
